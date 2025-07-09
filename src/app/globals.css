@@ -294,6 +294,18 @@ button {
     display: none !important;
   }
 
+  /* Prevent sections from breaking across pages */
+  .section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Keep experience and education items together */
+  .item {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
   /* Reset hover effects for links in print */
   a:hover {
     background: transparent !important;
