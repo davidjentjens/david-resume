@@ -3,7 +3,7 @@
 export default function Skills() {
   const skills = [
     { name: "HTML, CSS, JS, TS", level: "7 years exp." },
-    { name: "React/JS, Node.js, C#", level: "7 years exp." },
+    { name: "React, Node.js, C#", level: "7 years exp." },
     { name: "DevOps, Agile, PostgreSQL", level: "5 years exp." },
     { name: "Python, Machine Learning", level: "3 years exp." },
     { name: "C, Java", level: "2 years academical exp." },
