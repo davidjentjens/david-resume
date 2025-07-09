@@ -5,37 +5,37 @@ import Image from 'next/image';
 export default function Experience() {
   const experiences = [
     {
-      title: "PEPSICO - February 2024 - Present",
+      title: "PEPSICO - Feb 2024 - Present",
       company: "Senior Frontend Engineer",
-      description: "Leading frontend development initiatives",
+      description: "Lead development of GSPT (Global Supply Planning Tool), managing potato supply & demand optimization for chip manufacturing worldwide. Architect scalable solutions for complex agricultural supply chain logistics.",
       logo: "/pepsico-logo.png",
       website: "https://www.pepsico.com"
     },
     {
-      title: "INTELLTECH - 2022-2024",
-      company: "Senior Front-end Engineer and Manager",
-      description: "Leading development and QA processes",
+      title: "INTELLTECH - Apr 2023 - Feb 2024",
+      company: "Tech Manager (QA) & Sr. Full Stack Developer",
+      description: "Led development teams & QA processes for mining industry clients. Built front-end libraries, CI/CD pipelines, and comprehensive testing frameworks (unit, integration, e2e). Managed centralized design system.",
       logo: "/intelltech-logo.jpeg",
       website: "https://intelltech.com.br"
     },
     {
-      title: "PORTAL SOLAR - 2022-2023",
-      company: "Full Stack Dev - React | Next | Node | RoR",
-      description: "Full-stack development with modern technologies",
+      title: "PORTAL SOLAR - Jan 2023 - Apr 2023",
+      company: "Full Stack Developer",
+      description: "Developed SEO-optimized institutional sites with Next.js & Ruby on Rails backend. Created & maintained Solaris design system for React/React Native apps.",
       logo: "/portal-solar-logo.jpg",
       website: "https://www.portalsolar.com.br"
     },
     {
-      title: "TMOV - 2021-2022",
-      company: "Senior Full Stack Dev - React | Node | C#",
-      description: "Senior development role with diverse tech stack",
+      title: "TMOV - Mar 2022 - Jan 2023",
+      company: "Full Stack Developer (React + Node)",
+      description: "Built transportation logistics platform connecting cargo shippers with truckers. Tech stack: React, Node.js, .NET Core, SQL Server.",
       logo: "/tmov-logo.png",
       website: "https://tmov.com.br"
     },
     {
-      title: "ICA - PETROBRAS - 2018-2021",
-      company: "Full Stack Dev React | Node | C# | Django",
-      description: "Full-stack development for enterprise solutions",
+      title: "ICA PUC-RIO - Aug 2018 - Mar 2022",
+      company: "Full Stack Developer & Software Engineer Intern",
+      description: "Developed React interfaces & AI solutions for enterprise clients including Petrobras & Intel. Full-stack development using React, Node.js, C#, and Python across multiple high-impact projects.",
       logo: "/ica-puc-rio-logo.jpeg",
       website: "https://ica.ele.puc-rio.br/"
     }
@@ -51,7 +51,7 @@ export default function Experience() {
             href={exp.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="item flex items-start gap-3 cursor-pointer transition-all duration-200 hover:bg-red-50 hover:scale-[1.02] rounded-lg p-3 -m-3"
+            className="item flex items-start gap-3 cursor-pointer rounded-lg p-3 -m-3"
           >
             <div className="w-12 h-12 flex-shrink-0 rounded-lg overflow-hidden bg-gray-100 border border-gray-200">
               <Image
