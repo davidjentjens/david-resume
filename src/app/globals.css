@@ -316,6 +316,17 @@ button {
   .section {
     orphans: 3;
     widows: 3;
+    padding-top: 1rem;
+  }
+
+  /* Make all sections have consistent background in PDF */
+  .bg-gray-50 {
+    background-color: #f9fafb !important;
+  }
+
+  /* Ensure consistent background for entire page */
+  .grid > div {
+    background-color: #f9fafb !important;
   }
 
   /* Reset hover effects for links in print */
