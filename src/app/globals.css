@@ -306,6 +306,18 @@ button {
     break-inside: avoid;
   }
 
+  /* Add padding to pages and control orphans/widows */
+  @page {
+    margin: 1in 0.5in;
+    padding-top: 0.5in;
+  }
+
+  /* Add space before sections that start on new pages */
+  .section {
+    orphans: 3;
+    widows: 3;
+  }
+
   /* Reset hover effects for links in print */
   a:hover {
     background: transparent !important;
