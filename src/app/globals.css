@@ -114,6 +114,7 @@ body {
   padding: 0.3rem 0;
   border-bottom: 1px solid rgba(196, 30, 58, 0.1);
   transition: all 0.3s ease;
+  padding-right: 0.75rem;
 }
 
 .item:hover {
@@ -131,13 +132,6 @@ body {
   align-items: center;
   margin-bottom: 0.75rem;
   padding: 0.5rem 0;
-  transition: all 0.3s ease;
-}
-
-.contact-item:hover {
-  background: rgba(196, 30, 58, 0.05);
-  padding-left: 0.75rem;
-  border-radius: 0.5rem;
 }
 
 .contact-label {

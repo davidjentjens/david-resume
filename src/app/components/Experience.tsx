@@ -13,7 +13,7 @@ export default function Experience() {
     },
     {
       title: "INTELLTECH - 2022-2024",
-      company: "Senior Front-end Engineer and QA Manager",
+      company: "Senior Front-end Engineer and Manager",
       description: "Leading development and QA processes",
       logo: "/intelltech-logo.jpeg",
       website: "https://intelltech.com.br"

@@ -45,7 +45,7 @@ export default function Contact() {
           <div className="contact-item">
             <span className="contact-label">Phone:</span>
             <div className="flex items-center gap-2">
-              <span className="contact-value">+55(21)97535-2974</span>
+              <span className="contact-value">+55 (21) 97535-2974</span>
               <button
                 onClick={callPhone}
                 className="p-1.5 bg-green-600 hover:bg-green-700 text-white rounded-md transition-colors duration-200"
