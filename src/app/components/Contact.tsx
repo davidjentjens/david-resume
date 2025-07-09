@@ -45,7 +45,7 @@ export default function Contact() {
           <div className="contact-item">
             <span className="contact-label">Phone:</span>
             <div className="flex items-center gap-2">
-              <span className="contact-value">+55 (21) 97535-2974</span>
+              <span className="contact-value truncate max-w-[120px] sm:max-w-none">+55 (21) 97535-2974</span>
               <button
                 onClick={callPhone}
                 className="p-1.5 bg-green-600 hover:bg-green-700 text-white rounded-md transition-colors duration-200"
@@ -80,7 +80,7 @@ export default function Contact() {
           <div className="contact-item">
             <span className="contact-label">Email:</span>
             <div className="flex items-center gap-2">
-              <span className="contact-value">davidjentjens@gmail.com</span>
+              <span className="contact-value truncate max-w-[120px] sm:max-w-none">davidjentjens@gmail.com</span>
               <button
                 onClick={sendEmail}
                 className="p-1.5 bg-red-600 hover:bg-red-700 text-white rounded-md transition-colors duration-200"
