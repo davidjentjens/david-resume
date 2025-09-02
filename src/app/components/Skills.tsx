@@ -29,7 +29,7 @@ export default function Skills() {
     <div className="space-y-8">
       <div className="section animate-fade-in">
         <div className="section-title">Interests</div>
-        <div className="space-y-2">
+        <div className="space-y-2 text-gray-600 leading-relaxed">
           {interests.map((interest, index) => (
             <div key={index} className="item">{interest}</div>
           ))}
@@ -38,7 +38,7 @@ export default function Skills() {
 
       <div className="section animate-fade-in">
         <div className="section-title">Skills</div>
-        <div className="space-y-2">
+        <div className="space-y-2 text-gray-600 leading-relaxed">
           {skills.map((skill, index) => (
             <div key={index} className="flex justify-between items-center py-2">
               <span className="font-medium">{skill.name}</span>
@@ -50,7 +50,7 @@ export default function Skills() {
 
       <div className="section animate-fade-in">
         <div className="section-title">Languages</div>
-        <div className="grid grid-cols-1 gap-2">
+        <div className="grid grid-cols-1 gap-2 text-gray-600 leading-relaxed">
           {languages.map((lang, index) => (
             <div key={index} className="flex justify-between py-1">
               <span>{lang.name}</span>
