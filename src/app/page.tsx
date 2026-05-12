@@ -5,7 +5,6 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import References from './components/References';
 
 export default function Home() {
   return (
@@ -22,7 +21,6 @@ export default function Home() {
               <Education />
               <Experience />
               <Contact />
-              <References />
             </div>
           </div>
         </div>

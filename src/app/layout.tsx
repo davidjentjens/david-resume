@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "David M. Jentjens - Resume",
-  description: "Senior Software Engineer and Manager",
+  description: "Senior Frontend Engineer — React & TypeScript Specialist",
 };
 
 export default function RootLayout({

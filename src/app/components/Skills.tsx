@@ -2,20 +2,20 @@
 
 export default function Skills() {
   const skills = [
-    { name: "HTML, CSS, JS, TS", level: "7 years exp." },
-    { name: "React, Node.js, C#", level: "7 years exp." },
-    { name: "DevOps, Agile, PostgreSQL", level: "5 years exp." },
+    { name: "React, TypeScript, Node.js", level: "7 years exp." },
+    { name: "HTML, CSS, JavaScript", level: "7 years exp." },
+    { name: "Next.js, REST APIs, C#", level: "5 years exp." },
+    { name: "DevOps, CI/CD, PostgreSQL", level: "5 years exp." },
     { name: "Python, Machine Learning", level: "3 years exp." },
-    { name: "C, Java", level: "2 years academical exp." },
-    { name: "Redis, MongoDB", level: "1 year academical exp." }
+    { name: "Redis, MongoDB", level: "1 year exp." }
   ];
 
   const interests = [
-    "Web and Mobile apps",
-    "DevOps",
+    "Enterprise Web Applications",
+    "Design Systems",
+    "DevOps & CI/CD",
     "REST APIs",
-    "Machine Learning",
-    "Cool projects"
+    "Mobile Development"
   ];
 
   const languages = [
