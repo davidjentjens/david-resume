@@ -4,11 +4,15 @@ export default function Education() {
   const educationData = [
     {
       institution: "PUC-RIO, 2018–2021",
-      degree: "BA Computer Science"
+      degree: "Bachelor of Computer Science",
+      highlight: true,
+      link: "https://diplomas.puc-rio.br/528.528.b376e5de2cd2"
     },
     {
       institution: "UFRJ, 2017–2018",
-      degree: "BA Computer Science (transferred to PUC-Rio via scholarship)"
+      degree: "BA Computer Science (transferred to PUC-Rio via scholarship)",
+      highlight: false,
+      link: null
     }
   ];
 
@@ -42,6 +46,16 @@ export default function Education() {
             <div key={index} className="item">
               <div className="font-bold text-red-700 mb-1">{edu.institution}</div>
               <div className="text-gray-600 text-sm">{edu.degree}</div>
+              {edu.link && (
+                <a
+                  href={edu.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-600 text-sm hover:underline mt-1 inline-block"
+                >
+                  Verified Digital Diploma ↗
+                </a>
+              )}
             </div>
           ))}
         </div>
