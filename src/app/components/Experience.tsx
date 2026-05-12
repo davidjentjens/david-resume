@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Experience() {
   const experiences = [
     {
-      title: "PEPSICO (via Turing) - Oct 2024 - Present",
+      title: "PEPSICO - Oct 2024 - Present",
       company: "Senior Frontend Engineer",
       description: "Lead frontend development of GSPT (Global Supply Planning Tool), a React/TypeScript application used across multiple global markets for potato supply and demand optimization. Architect scalable UI components using PepsiCo's Peacock design system, integrate REST APIs, and coordinate with distributed backend and design teams across the US and India. Deliver features end-to-end in Agile sprints with full QA ownership.",
       logo: "/pepsico-logo.png",
@@ -13,7 +13,7 @@ export default function Experience() {
     },
     {
       title: "INTELLTECH - Mar 2023 - Present",
-      company: "Senior Full Stack Developer & Former QA Coordinator",
+      company: "Senior Full Stack Developer",
       description: "Software development for mining industry clients. Scope includes GitLab-to-GitHub Enterprise Cloud migration (~60 repositories), CI/CD pipeline architecture, design system maintenance, and DevOps documentation. Previously served as QA Coordinator and Tech Manager (2024), leading testing processes and delivering strategic technical reports to leadership.",
       logo: "/intelltech-logo.jpeg",
       website: "https://intelltech.com.br"
