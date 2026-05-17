@@ -9,13 +9,13 @@ export default function Header() {
   };
 
   return (
-    <div className="bg-gradient-to-r from-red-700 to-red-600 text-white p-6 relative overflow-hidden">
+    <div className="print-header bg-gradient-to-r from-red-700 to-red-600 text-white p-6 print:p-4 relative overflow-hidden">
       {/* Animated background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent opacity-50 animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/10 to-transparent opacity-50 animate-pulse print:hidden"></div>
       
-      <div className="flex flex-col sm:flex-row sm:items-center gap-6">
-        <div className="flex items-center gap-6 flex-1">
-          <div className="w-24 h-24 rounded-full border-3 border-white/30 bg-white/10 relative z-10 hover:scale-105 transition-transform duration-300 overflow-hidden flex-shrink-0">
+      <div className="flex flex-col sm:flex-row sm:items-center gap-6 print:gap-3">
+        <div className="flex items-center gap-6 print:gap-4 flex-1">
+          <div className="print-photo w-24 h-24 print:w-14 print:h-14 rounded-full border-3 border-white/30 bg-white/10 relative z-10 hover:scale-105 transition-transform duration-300 overflow-hidden flex-shrink-0">
             <Image
               src="/profile.jpeg"
               alt="David M. Jentjens"
@@ -29,10 +29,10 @@ export default function Header() {
           </div>
           
           <div className="flex-1 relative z-10">
-            <div className="text-3xl font-bold mb-1 tracking-wide animate-slide-in-left">
+            <div className="text-3xl print:text-xl font-bold mb-1 print:mb-0 tracking-wide animate-slide-in-left">
               David M. Jentjens
             </div>
-            <div className="text-lg opacity-90 mb-0.5 animate-slide-in-left-delayed">
+            <div className="text-lg print:text-sm opacity-90 mb-0.5 animate-slide-in-left-delayed">
               Senior Frontend Lead
             </div>
           </div>

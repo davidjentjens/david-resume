@@ -267,82 +267,133 @@ button {
 
 /* Print styles for PDF generation */
 @media print {
+  @page {
+    size: A4 portrait;
+    margin: 1.5cm 2cm;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
   body {
     background: white !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
-  .min-h-screen {
+    font-size: 11pt;
+    line-height: 1.4;
     min-height: auto !important;
+    color: #1a1a1a;
   }
 
-  .shadow-2xl {
-    box-shadow: none !important;
+  /* Kill animations */
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
   }
 
-  .rounded-3xl {
-    border-radius: 0 !important;
-  }
-
-  .p-5 {
-    padding: 0 !important;
-  }
-
-  /* Hide buttons in print */
-  button {
+  /* Hide interactive elements */
+  button,
+  .ToastViewport,
+  .ToastRoot {
     display: none !important;
   }
 
-  /* Prevent sections from breaking across pages */
-  .section {
-    page-break-inside: avoid;
-    break-inside: avoid;
+  /* Remove card chrome */
+  .min-h-screen {
+    min-height: auto !important;
+    padding: 0 !important;
   }
 
-  /* Keep experience and education items together */
+  .print-container {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* Force single-column layout */
+  .print-grid {
+    display: block !important;
+  }
+
+  .print-grid > div {
+    background: white !important;
+    padding: 1.5rem 0 !important;
+    border: none !important;
+  }
+
+  /* Section spacing for print */
+  .section {
+    margin-bottom: 2.8rem;
+    padding-top: 0;
+  }
+
+  .section-title {
+    font-size: 1.1em;
+    margin-bottom: 0.6rem;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .section-title::after {
+    width: 30px;
+  }
+
+  .section:hover .section-title::after {
+    width: 30px;
+  }
+
+  /* Items: keep together, comfortable spacing */
   .item {
-    page-break-inside: avoid;
+    margin: 0 0 0.7rem 0 !important;
+    padding: 0.3rem 0 !important;
     break-inside: avoid;
+    page-break-inside: avoid;
+    background: transparent !important;
   }
 
-  /* Add padding to pages and control orphans/widows */
-  @page {
-    margin: 1in 0.5in;
-    padding-top: 0.5in;
+  .item:hover {
+    background: transparent !important;
+    padding-left: 0 !important;
   }
 
-  /* Add space before sections that start on new pages */
-  .section {
+  /* Typography tightening */
+  p {
     orphans: 3;
     widows: 3;
-    padding-top: 1rem;
+    margin-bottom: 0.3rem;
   }
 
-  /* Make all sections have consistent background in PDF */
-  .bg-gray-50 {
-    background-color: #f9fafb !important;
+  /* Experience entries: keep logo + text together */
+  .print-grid a.item,
+  a.item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    text-decoration: none !important;
+    color: inherit !important;
   }
 
-  /* Ensure consistent background for entire page */
-  .grid > div {
-    background-color: #f9fafb !important;
+  /* Header: compact for print */
+  .print-header {
+    padding: 1rem 1.5rem !important;
   }
 
-  /* Reset hover effects for links in print */
-  a:hover {
-    background: transparent !important;
-    transform: none !important;
+  .print-header .print-photo {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
   }
 
-  /* Ensure good contrast for print */
-  .bg-gray-50 {
-    background-color: #f9f9f9 !important;
+  /* Links: subtle in print */
+  a {
+    color: #c41e3a !important;
+    text-decoration: none !important;
   }
 
-  /* Optimize for A4 paper */
-  @page {
-    size: A4;
-    margin: 1cm;
+  /* Hide the border-r from left column */
+  .border-r {
+    border-right: none !important;
   }
 }
