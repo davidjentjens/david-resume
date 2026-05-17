@@ -6,7 +6,7 @@ export default function Experience() {
   const experiences = [
     {
       title: "PEPSICO - Oct 2024 - Present",
-      company: "Senior Frontend Engineer",
+      company: "Senior Frontend Lead",
       description: "Lead frontend development of GSPT (Global Supply Planning Tool), a React/TypeScript application used across multiple global markets for potato supply and demand optimization. Architect scalable UI components using PepsiCo's Peacock design system, integrate REST APIs, and coordinate with distributed backend and design teams across the US and India. Deliver features end-to-end in Agile sprints with full QA ownership.",
       logo: "/pepsico-logo.png",
       website: "https://www.pepsico.com"

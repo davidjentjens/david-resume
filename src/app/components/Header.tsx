@@ -33,10 +33,7 @@ export default function Header() {
               David M. Jentjens
             </div>
             <div className="text-lg opacity-90 mb-0.5 animate-slide-in-left-delayed">
-              Senior Frontend Engineer
-            </div>
-            <div className="text-base opacity-80 animate-slide-in-left-delayed-2">
-              React &amp; TypeScript Specialist
+              Senior Frontend Lead
             </div>
           </div>
 
