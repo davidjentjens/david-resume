@@ -51,7 +51,7 @@ export default function Experience() {
             href={exp.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="item flex items-start gap-3 cursor-pointer rounded-lg p-3 -m-3"
+            className="item flex items-start gap-3 cursor-pointer rounded-lg !p-3 -m-3"
           >
             <div className="w-12 h-12 flex-shrink-0 rounded-lg overflow-hidden bg-gray-100 border border-gray-200">
               <Image
