@@ -12,7 +12,7 @@ export default function Experience() {
       website: "https://www.pepsico.com"
     },
     {
-      title: "INTELLTECH - Mar 2023 - Present",
+      title: "INTELLTECH - Mar 2023 - Oct 2024",
       company: "Senior Full Stack Developer",
       description: "Software development for mining industry clients. Scope includes GitLab-to-GitHub Enterprise Cloud migration (~60 repositories), CI/CD pipeline architecture, design system maintenance, and DevOps documentation. Previously served as QA Coordinator and Tech Manager (2024), leading testing processes and delivering strategic technical reports to leadership.",
       logo: "/intelltech-logo.jpeg",
