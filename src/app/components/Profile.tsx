@@ -7,9 +7,9 @@ export default function Profile() {
       <div className="text-gray-600 leading-relaxed space-y-3">
         <p>
           Senior Frontend Lead with 7+ years building enterprise-scale web applications.
-          Currently leading frontend development of GSPT (Global Supply Planning Tool) at
+          Currently leading frontend development of GSPT (Global Seed Planning Tool) at
           PepsiCo — a React/TypeScript application used across multiple global markets for
-          supply chain optimization.
+          potato seed supply chain optimization.
         </p>
         <p>
           My work spans scalable UI architecture, design system implementation, REST API
