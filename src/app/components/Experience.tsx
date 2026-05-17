@@ -7,14 +7,14 @@ export default function Experience() {
     {
       title: "PEPSICO - Oct 2024 - Present",
       company: "Senior Frontend Lead",
-      description: "Lead frontend development of GSPT (Global Supply Planning Tool), a React/TypeScript application used across multiple global markets for potato supply and demand optimization. Architect scalable UI components using PepsiCo's Peacock design system, integrate REST APIs, and coordinate with distributed backend and design teams across the US and India. Deliver features end-to-end in Agile sprints with full QA ownership.",
+      description: "Lead frontend development of GSPT (Global Supply Planning Tool), a React/TypeScript application used for supply chain optimization across global markets. Architect scalable UI components using PepsiCo's Peacock design system, integrate REST APIs, and coordinate with distributed backend and design teams across the US and India. Deliver features end-to-end in Agile sprints with full QA ownership.",
       logo: "/pepsico-logo.png",
       website: "https://www.pepsico.com"
     },
     {
       title: "INTELLTECH - Mar 2023 - Oct 2024",
-      company: "Senior Full Stack Developer",
-      description: "Software development for mining industry clients. Scope includes GitLab-to-GitHub Enterprise Cloud migration (~60 repositories), CI/CD pipeline architecture, design system maintenance, and DevOps documentation. Previously served as QA Coordinator and Tech Manager (2024), leading testing processes and delivering strategic technical reports to leadership.",
+      company: "Senior Software Engineer",
+      description: "Software development and technical leadership for mining industry clients including Vale, Usiminas, and Anglo American. Scope includes GitLab-to-GitHub Enterprise Cloud migration (~60 repositories), CI/CD pipeline architecture, design system maintenance, DevOps documentation, and delivering strategic technical reports to leadership.",
       logo: "/intelltech-logo.jpeg",
       website: "https://intelltech.com.br"
     },
