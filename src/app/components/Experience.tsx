@@ -49,7 +49,7 @@ export default function Experience() {
       website: "https://tmov.com.br"
     },
     {
-      title: "Full Stack Developer & Software Engineer Intern",
+      title: "Full Stack Developer",
       company: "ICA PUC-Rio",
       type: "Full-time",
       period: "Aug 2018 - Mar 2022",
