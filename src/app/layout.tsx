@@ -14,7 +14,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "David M. Jentjens - Resume",
-  description: "Senior Frontend Lead",
+  description: "Senior Frontend Lead with 7+ years building enterprise-scale web applications. React, TypeScript, Node.js. Fluent in German, English, and Portuguese.",
+  openGraph: {
+    title: "David M. Jentjens - Resume",
+    description: "Senior Frontend Lead with 7+ years building enterprise-scale web applications.",
+    siteName: "David M. Jentjens",
+    type: "website",
+  },
+  metadataBase: new URL("https://davidjentjens.vercel.app"),
 };
 
 export default function RootLayout({
