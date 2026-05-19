@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function Education() {
   const educationData = [
     {
@@ -18,23 +20,26 @@ export default function Education() {
 
   const certifications = [
     {
+      title: "Claude Certified Architect – Foundations (CCA-F)",
+      institution: "Anthropic",
+      year: "2026",
+      link: "https://verify.skilljar.com/c/kipkzq69m438",
+      logo: "/anthropic-logo.jpeg"
+    },
+    {
       title: "User Experience Nanodegree",
       institution: "Udacity",
       year: "2022",
-      link: "https://www.udacity.com/certificate/e/17eb15e0-7797-11ec-844f-97d3503d4891"
+      link: "https://www.udacity.com/certificate/e/17eb15e0-7797-11ec-844f-97d3503d4891",
+      logo: "/udacity-logo.jpeg"
     },
     {
       title: "Machine Learning Engineer Nanodegree",
       institution: "Udacity",
       year: "2021",
-      link: "https://www.udacity.com/certificate/e/413daa32-8b4a-11eb-adfa-2744b3773881"
+      link: "https://www.udacity.com/certificate/e/413daa32-8b4a-11eb-adfa-2744b3773881",
+      logo: "/udacity-logo.jpeg"
     },
-    {
-      title: "Introduction to Machine Learning with TensorFlow",
-      institution: "Udacity",
-      year: "2020",
-      link: "https://www.udacity.com/certificate/e/cd4f56f6-34d8-11eb-9781-27f88f0343e0"
-    }
   ];
 
   return (
@@ -65,17 +70,28 @@ export default function Education() {
         <div className="section-title">Certifications</div>
         <div className="space-y-4">
           {certifications.map((cert, index) => (
-            <div key={index} className="item">
-              <div className="font-bold text-red-700 mb-1">{cert.title}</div>
-              <div className="text-gray-600 text-sm">{cert.institution}, {cert.year}</div>
-              <a
-                href={cert.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-red-600 text-sm hover:underline"
-              >
-                View Certificate
-              </a>
+            <div key={index} className="item flex items-start gap-3">
+              <div className="w-10 h-10 flex-shrink-0 rounded-lg overflow-hidden bg-gray-100 border border-gray-200">
+                <Image
+                  src={cert.logo}
+                  alt={`${cert.institution} logo`}
+                  width={80}
+                  height={80}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="flex-1">
+                <div className="font-bold text-red-700 mb-1">{cert.title}</div>
+                <div className="text-gray-600 text-sm">{cert.institution}, {cert.year}</div>
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-600 text-sm hover:underline"
+                >
+                  View Certificate
+                </a>
+              </div>
             </div>
           ))}
         </div>
