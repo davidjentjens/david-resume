@@ -325,9 +325,19 @@ button {
     border: none !important;
   }
 
+  /* Trailing space at the end of a column can push the last section
+     onto a page of its own — don't let it. */
+  .print-grid > div:last-child {
+    padding-bottom: 0 !important;
+  }
+
+  .section:last-child {
+    margin-bottom: 0 !important;
+  }
+
   /* Section spacing for print */
   .section {
-    margin-bottom: 2.8rem;
+    margin-bottom: 1.9rem;
     padding-top: 0;
   }
 

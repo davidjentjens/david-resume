@@ -33,7 +33,7 @@ export default function Header() {
               David M. Jentjens
             </div>
             <div className="text-lg print:text-sm opacity-90 mb-0.5 animate-slide-in-left-delayed">
-              Senior Frontend Lead
+              Senior Frontend Engineer · Independent Contractor
             </div>
           </div>
 

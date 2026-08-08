@@ -44,7 +44,7 @@ export default function Education() {
 
   return (
     <>
-      <div className="section animate-fade-in print:break-before-page print:!pt-8">
+      <div className="section animate-fade-in">
         <div className="section-title">Education</div>
         <div className="space-y-4">
           {educationData.map((edu, index) => (
