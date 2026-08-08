@@ -11,6 +11,7 @@ type ExperienceEntry = {
   location: string;
   description: string;
   logo: string;
+  logoAlt?: string;
   website?: string;
 };
 
@@ -27,23 +28,24 @@ export default function Experience() {
     },
     {
       title: "Frontend Lead",
-      company: "PepsiCo",
-      type: "Full-time",
+      company: "PepsiCo (via Turing)",
+      type: "Contract",
       period: "Oct 2024 - 2026",
       duration: "1 yr 8 mos",
       location: "Plano, TX · Remote",
       description: "Led frontend development of GSPT (Global Seed Planning Tool), a React/TypeScript application used for potato seed supply chain optimization across global markets. Drove the migration of the UI layer from MUI to PepsiCo's Peacock design system, rebuilding shared components and aligning the codebase with the new system. Built data-heavy enterprise screens over REST APIs and optimized rendering and load performance for large planning datasets. Coordinated with distributed backend and design teams across the US and India, delivering features end-to-end in Agile sprints with full QA ownership.",
       logo: "/pepsico-logo.png",
+      logoAlt: "PepsiCo logo",
       website: "https://www.pepsico.com"
     },
     {
       title: "Senior Software Engineer",
       company: "Intelltech",
-      type: "Full-time",
+      type: "Contract",
       period: "Mar 2023 - Present",
       duration: "3 yrs 6 mos",
       location: "Foz do Iguaçu, Paraná, Brazil · Remote",
-      description: "Software development and technical leadership for mining industry clients including Vale, Usiminas, and Anglo American. Scope included GitLab-to-GitHub Enterprise Cloud migration (~60 repositories), CI/CD pipeline architecture, design system maintenance, DevOps documentation, and delivering strategic technical reports to leadership.",
+      description: "Software development and technical leadership for mining industry clients including Vale, Usiminas, and Anglo American. Ongoing scope includes CI/CD pipeline architecture, design system maintenance, DevOps documentation, and strategic technical reports to leadership. Led a GitLab-to-GitHub Enterprise Cloud migration across ~60 repositories.",
       logo: "/intelltech-logo.jpeg",
       website: "https://intelltech.com.br"
     },
@@ -101,7 +103,7 @@ export default function Experience() {
               <div className="w-12 h-12 flex-shrink-0 rounded-lg overflow-hidden bg-gray-100 border border-gray-200 mt-0.5">
                 <Image
                   src={exp.logo}
-                  alt={`${exp.company} logo`}
+                  alt={exp.logoAlt ?? `${exp.company} logo`}
                   width={96}
                   height={96}
                   className="w-full h-full object-contain"
