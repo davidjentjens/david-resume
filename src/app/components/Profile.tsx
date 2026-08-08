@@ -17,9 +17,9 @@ export default function Profile() {
           migration from MUI to the Peacock design system and optimized data-heavy planning
           screens for performance. Since 2023, I&apos;ve also led development teams at Intelltech
           building software for major mining clients including Vale and Anglo American, with a
-          focus on real-time monitoring interfaces for geological data. Scope also included
-          CI/CD pipeline architecture and a GitLab to GitHub Enterprise Cloud migration across
-          ~60 repositories.
+          focus on real-time monitoring interfaces for geological data. That scope also covers
+          CI/CD pipeline architecture, and I led a GitLab to GitHub Enterprise Cloud migration
+          across ~60 repositories.
         </p>
         <p>
           My work spans scalable UI architecture, design system implementation, and full-stack
